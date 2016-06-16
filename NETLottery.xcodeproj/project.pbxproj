@@ -1,0 +1,734 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E0AFB921D10115200375E3B /* UIImage+ZYNResizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFB911D10115200375E3B /* UIImage+ZYNResizable.m */; };
+		2E0AFB941D101E0A00375E3B /* discover.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0AFB931D101E0A00375E3B /* discover.plist */; };
+		2E0AFB971D10215500375E3B /* ZYNDiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFB961D10215500375E3B /* ZYNDiscoverCell.m */; };
+		2E0AFBB31D10234500375E3B /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFB9B1D10234400375E3B /* MASCompositeConstraint.m */; };
+		2E0AFBB41D10234500375E3B /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFB9E1D10234400375E3B /* MASConstraint.m */; };
+		2E0AFBB51D10234500375E3B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBA01D10234400375E3B /* MASConstraintMaker.m */; };
+		2E0AFBB61D10234500375E3B /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBA21D10234400375E3B /* MASLayoutConstraint.m */; };
+		2E0AFBB71D10234500375E3B /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBA61D10234400375E3B /* MASViewAttribute.m */; };
+		2E0AFBB81D10234500375E3B /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBA81D10234400375E3B /* MASViewConstraint.m */; };
+		2E0AFBB91D10234500375E3B /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBAA1D10234400375E3B /* NSArray+MASAdditions.m */; };
+		2E0AFBBA1D10234500375E3B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBAD1D10234400375E3B /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		2E0AFBBB1D10234500375E3B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBAF1D10234400375E3B /* View+MASAdditions.m */; };
+		2E0AFBBC1D10234500375E3B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBB21D10234400375E3B /* ViewController+MASAdditions.m */; };
+		2E0AFBC41D102B9000375E3B /* ZYNDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBC31D102B9000375E3B /* ZYNDiscoverViewController.m */; };
+		2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */; };
+		2EB1C6E91D0EC930006A44C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C6E81D0EC930006A44C2 /* main.m */; };
+		2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */; };
+		2EB1C75B1D0ED166006A44C2 /* ZYNNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C74B1D0ED166006A44C2 /* ZYNNavigationController.m */; };
+		2EB1C75C1D0ED166006A44C2 /* ZYNTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C74D1D0ED166006A44C2 /* ZYNTabBarController.m */; };
+		2EB1C7631D0ED3A2006A44C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C7621D0ED3A2006A44C2 /* AppDelegate.m */; };
+		2EB1C7661D0EDD7C006A44C2 /* ZYNBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C7651D0EDD7C006A44C2 /* ZYNBottomView.m */; };
+		2EB1C7691D0EE2B6006A44C2 /* ZYNBottomButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C7681D0EE2B6006A44C2 /* ZYNBottomButton.m */; };
+		2EB1C76C1D0EE783006A44C2 /* ZYNHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C76B1D0EE783006A44C2 /* ZYNHallViewController.m */; };
+		2EB1C76F1D0EE79A006A44C2 /* ZYNArenaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C76E1D0EE79A006A44C2 /* ZYNArenaViewController.m */; };
+		2EB1C7721D0EE7A7006A44C2 /* ZYNHistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C7711D0EE7A7006A44C2 /* ZYNHistoryViewController.m */; };
+		2EB1C7751D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C7741D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m */; };
+		2EF0BD0F1D1128BE000D0E67 /* ZYNSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0BD0E1D1128BE000D0E67 /* ZYNSettingController.m */; };
+		2EF0BD121D1136B2000D0E67 /* ZYNGroupBuyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0BD111D1136B2000D0E67 /* ZYNGroupBuyController.m */; };
+		2EF0BD151D1136DE000D0E67 /* ZYNLotteryNumberController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0BD141D1136DE000D0E67 /* ZYNLotteryNumberController.m */; };
+		2EF0BD1B1D113B1B000D0E67 /* ZYNCategoryButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EF0BD1A1D113B1B000D0E67 /* ZYNCategoryButton.m */; };
+		2EF0BD1D1D114711000D0E67 /* settingData.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2EF0BD1C1D114711000D0E67 /* settingData.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E0AFB901D10115200375E3B /* UIImage+ZYNResizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYNResizable.h"; sourceTree = "<group>"; };
+		2E0AFB911D10115200375E3B /* UIImage+ZYNResizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYNResizable.m"; sourceTree = "<group>"; };
+		2E0AFB931D101E0A00375E3B /* discover.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = discover.plist; sourceTree = "<group>"; };
+		2E0AFB951D10215500375E3B /* ZYNDiscoverCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNDiscoverCell.h; sourceTree = "<group>"; };
+		2E0AFB961D10215500375E3B /* ZYNDiscoverCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNDiscoverCell.m; sourceTree = "<group>"; };
+		2E0AFB9A1D10234400375E3B /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		2E0AFB9B1D10234400375E3B /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		2E0AFB9C1D10234400375E3B /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		2E0AFB9D1D10234400375E3B /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		2E0AFB9E1D10234400375E3B /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		2E0AFB9F1D10234400375E3B /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		2E0AFBA01D10234400375E3B /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		2E0AFBA11D10234400375E3B /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		2E0AFBA21D10234400375E3B /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		2E0AFBA31D10234400375E3B /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		2E0AFBA41D10234400375E3B /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		2E0AFBA51D10234400375E3B /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		2E0AFBA61D10234400375E3B /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		2E0AFBA71D10234400375E3B /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		2E0AFBA81D10234400375E3B /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		2E0AFBA91D10234400375E3B /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		2E0AFBAA1D10234400375E3B /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		2E0AFBAB1D10234400375E3B /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2E0AFBAC1D10234400375E3B /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		2E0AFBAD1D10234400375E3B /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		2E0AFBAE1D10234400375E3B /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		2E0AFBAF1D10234400375E3B /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		2E0AFBB01D10234400375E3B /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		2E0AFBB11D10234400375E3B /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		2E0AFBB21D10234400375E3B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		2E0AFBC21D102B9000375E3B /* ZYNDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNDiscoverViewController.h; sourceTree = "<group>"; };
+		2E0AFBC31D102B9000375E3B /* ZYNDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNDiscoverViewController.m; sourceTree = "<group>"; };
+		2E7AEF821D0FAA0E000AB04C /* UIView+ZYN_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYN_Extension.h"; sourceTree = "<group>"; };
+		2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYN_Extension.m"; sourceTree = "<group>"; };
+		2EB1C6E41D0EC930006A44C2 /* NETLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EB1C6E81D0EC930006A44C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EB1C6F81D0EC930006A44C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EB1C6FF1D0ECA54006A44C2 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2EB1C74A1D0ED166006A44C2 /* ZYNNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNNavigationController.h; sourceTree = "<group>"; };
+		2EB1C74B1D0ED166006A44C2 /* ZYNNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNNavigationController.m; sourceTree = "<group>"; };
+		2EB1C74C1D0ED166006A44C2 /* ZYNTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNTabBarController.h; sourceTree = "<group>"; };
+		2EB1C74D1D0ED166006A44C2 /* ZYNTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNTabBarController.m; sourceTree = "<group>"; };
+		2EB1C7611D0ED3A2006A44C2 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../../AppDelegate.h; sourceTree = "<group>"; };
+		2EB1C7621D0ED3A2006A44C2 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../../AppDelegate.m; sourceTree = "<group>"; };
+		2EB1C7641D0EDD7C006A44C2 /* ZYNBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNBottomView.h; sourceTree = "<group>"; };
+		2EB1C7651D0EDD7C006A44C2 /* ZYNBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNBottomView.m; sourceTree = "<group>"; };
+		2EB1C7671D0EE2B6006A44C2 /* ZYNBottomButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNBottomButton.h; sourceTree = "<group>"; };
+		2EB1C7681D0EE2B6006A44C2 /* ZYNBottomButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNBottomButton.m; sourceTree = "<group>"; };
+		2EB1C76A1D0EE783006A44C2 /* ZYNHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNHallViewController.h; sourceTree = "<group>"; };
+		2EB1C76B1D0EE783006A44C2 /* ZYNHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNHallViewController.m; sourceTree = "<group>"; };
+		2EB1C76D1D0EE79A006A44C2 /* ZYNArenaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNArenaViewController.h; sourceTree = "<group>"; };
+		2EB1C76E1D0EE79A006A44C2 /* ZYNArenaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNArenaViewController.m; sourceTree = "<group>"; };
+		2EB1C7701D0EE7A7006A44C2 /* ZYNHistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNHistoryViewController.h; sourceTree = "<group>"; };
+		2EB1C7711D0EE7A7006A44C2 /* ZYNHistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNHistoryViewController.m; sourceTree = "<group>"; };
+		2EB1C7731D0EE7B8006A44C2 /* ZYNMyLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNMyLotteryViewController.h; sourceTree = "<group>"; };
+		2EB1C7741D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNMyLotteryViewController.m; sourceTree = "<group>"; };
+		2EF0BD0D1D1128BE000D0E67 /* ZYNSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNSettingController.h; sourceTree = "<group>"; };
+		2EF0BD0E1D1128BE000D0E67 /* ZYNSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNSettingController.m; sourceTree = "<group>"; };
+		2EF0BD101D1136B2000D0E67 /* ZYNGroupBuyController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNGroupBuyController.h; sourceTree = "<group>"; };
+		2EF0BD111D1136B2000D0E67 /* ZYNGroupBuyController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNGroupBuyController.m; sourceTree = "<group>"; };
+		2EF0BD131D1136DE000D0E67 /* ZYNLotteryNumberController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNLotteryNumberController.h; sourceTree = "<group>"; };
+		2EF0BD141D1136DE000D0E67 /* ZYNLotteryNumberController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNLotteryNumberController.m; sourceTree = "<group>"; };
+		2EF0BD191D113B1B000D0E67 /* ZYNCategoryButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNCategoryButton.h; sourceTree = "<group>"; };
+		2EF0BD1A1D113B1B000D0E67 /* ZYNCategoryButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNCategoryButton.m; sourceTree = "<group>"; };
+		2EF0BD1C1D114711000D0E67 /* settingData.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingData.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EB1C6E11D0EC930006A44C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E0AFB981D10232600375E3B /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				2E0AFB991D10234400375E3B /* Masonry */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
+		2E0AFB991D10234400375E3B /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				2E0AFB9A1D10234400375E3B /* MASCompositeConstraint.h */,
+				2E0AFB9B1D10234400375E3B /* MASCompositeConstraint.m */,
+				2E0AFB9C1D10234400375E3B /* MASConstraint+Private.h */,
+				2E0AFB9D1D10234400375E3B /* MASConstraint.h */,
+				2E0AFB9E1D10234400375E3B /* MASConstraint.m */,
+				2E0AFB9F1D10234400375E3B /* MASConstraintMaker.h */,
+				2E0AFBA01D10234400375E3B /* MASConstraintMaker.m */,
+				2E0AFBA11D10234400375E3B /* MASLayoutConstraint.h */,
+				2E0AFBA21D10234400375E3B /* MASLayoutConstraint.m */,
+				2E0AFBA31D10234400375E3B /* Masonry.h */,
+				2E0AFBA41D10234400375E3B /* MASUtilities.h */,
+				2E0AFBA51D10234400375E3B /* MASViewAttribute.h */,
+				2E0AFBA61D10234400375E3B /* MASViewAttribute.m */,
+				2E0AFBA71D10234400375E3B /* MASViewConstraint.h */,
+				2E0AFBA81D10234400375E3B /* MASViewConstraint.m */,
+				2E0AFBA91D10234400375E3B /* NSArray+MASAdditions.h */,
+				2E0AFBAA1D10234400375E3B /* NSArray+MASAdditions.m */,
+				2E0AFBAB1D10234400375E3B /* NSArray+MASShorthandAdditions.h */,
+				2E0AFBAC1D10234400375E3B /* NSLayoutConstraint+MASDebugAdditions.h */,
+				2E0AFBAD1D10234400375E3B /* NSLayoutConstraint+MASDebugAdditions.m */,
+				2E0AFBAE1D10234400375E3B /* View+MASAdditions.h */,
+				2E0AFBAF1D10234400375E3B /* View+MASAdditions.m */,
+				2E0AFBB01D10234400375E3B /* View+MASShorthandAdditions.h */,
+				2E0AFBB11D10234400375E3B /* ViewController+MASAdditions.h */,
+				2E0AFBB21D10234400375E3B /* ViewController+MASAdditions.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		2E7AEF811D0FA9DA000AB04C /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				2E7AEF821D0FAA0E000AB04C /* UIView+ZYN_Extension.h */,
+				2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */,
+				2E0AFB901D10115200375E3B /* UIImage+ZYNResizable.h */,
+				2E0AFB911D10115200375E3B /* UIImage+ZYNResizable.m */,
+			);
+			name = Category;
+			path = Categorys;
+			sourceTree = "<group>";
+		};
+		2EB1C6DB1D0EC930006A44C2 = {
+			isa = PBXGroup;
+			children = (
+				2EB1C6E61D0EC930006A44C2 /* NETLottery */,
+				2EB1C6E51D0EC930006A44C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EB1C6E51D0EC930006A44C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C6E41D0EC930006A44C2 /* NETLottery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EB1C6E61D0EC930006A44C2 /* NETLottery */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C72F1D0ED165006A44C2 /* Classes */,
+				2EB1C6E71D0EC930006A44C2 /* Supporting Files */,
+			);
+			path = NETLottery;
+			sourceTree = "<group>";
+		};
+		2EB1C6E71D0EC930006A44C2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */,
+				2EB1C6F81D0EC930006A44C2 /* Info.plist */,
+				2EB1C6E81D0EC930006A44C2 /* main.m */,
+				2EB1C6FF1D0ECA54006A44C2 /* PrefixHeader.pch */,
+				2E0AFB931D101E0A00375E3B /* discover.plist */,
+				2EF0BD1C1D114711000D0E67 /* settingData.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2EB1C72F1D0ED165006A44C2 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				2E0AFB981D10232600375E3B /* Libs */,
+				2EB1C7481D0ED166006A44C2 /* Main */,
+				2EB1C73C1D0ED166006A44C2 /* Hall */,
+				2EB1C7301D0ED165006A44C2 /* Arena */,
+				2EB1C7361D0ED166006A44C2 /* Discover */,
+				2EB1C7421D0ED166006A44C2 /* History */,
+				2EB1C7511D0ED166006A44C2 /* MyLottery */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		2EB1C7301D0ED165006A44C2 /* Arena */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7311D0ED165006A44C2 /* Controllers */,
+				2EB1C7321D0ED165006A44C2 /* Models */,
+				2EB1C7331D0ED166006A44C2 /* Others */,
+				2EB1C7341D0ED166006A44C2 /* Views */,
+			);
+			path = Arena;
+			sourceTree = "<group>";
+		};
+		2EB1C7311D0ED165006A44C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C76D1D0EE79A006A44C2 /* ZYNArenaViewController.h */,
+				2EB1C76E1D0EE79A006A44C2 /* ZYNArenaViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EB1C7321D0ED165006A44C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EB1C7331D0ED166006A44C2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2EB1C7341D0ED166006A44C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EB1C7361D0ED166006A44C2 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7371D0ED166006A44C2 /* Controllers */,
+				2EB1C7381D0ED166006A44C2 /* Models */,
+				2EB1C7391D0ED166006A44C2 /* Others */,
+				2EB1C73A1D0ED166006A44C2 /* Views */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2EB1C7371D0ED166006A44C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E0AFBC21D102B9000375E3B /* ZYNDiscoverViewController.h */,
+				2E0AFBC31D102B9000375E3B /* ZYNDiscoverViewController.m */,
+				2EF0BD101D1136B2000D0E67 /* ZYNGroupBuyController.h */,
+				2EF0BD111D1136B2000D0E67 /* ZYNGroupBuyController.m */,
+				2EF0BD131D1136DE000D0E67 /* ZYNLotteryNumberController.h */,
+				2EF0BD141D1136DE000D0E67 /* ZYNLotteryNumberController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EB1C7381D0ED166006A44C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EB1C7391D0ED166006A44C2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2EB1C73A1D0ED166006A44C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2E0AFB951D10215500375E3B /* ZYNDiscoverCell.h */,
+				2E0AFB961D10215500375E3B /* ZYNDiscoverCell.m */,
+				2EF0BD191D113B1B000D0E67 /* ZYNCategoryButton.h */,
+				2EF0BD1A1D113B1B000D0E67 /* ZYNCategoryButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EB1C73C1D0ED166006A44C2 /* Hall */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C73D1D0ED166006A44C2 /* Controllers */,
+				2EB1C73E1D0ED166006A44C2 /* Models */,
+				2EB1C73F1D0ED166006A44C2 /* Others */,
+				2EB1C7401D0ED166006A44C2 /* Views */,
+			);
+			path = Hall;
+			sourceTree = "<group>";
+		};
+		2EB1C73D1D0ED166006A44C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C76A1D0EE783006A44C2 /* ZYNHallViewController.h */,
+				2EB1C76B1D0EE783006A44C2 /* ZYNHallViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EB1C73E1D0ED166006A44C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EB1C73F1D0ED166006A44C2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2EB1C7401D0ED166006A44C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EB1C7421D0ED166006A44C2 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7431D0ED166006A44C2 /* Controllers */,
+				2EB1C7441D0ED166006A44C2 /* Models */,
+				2EB1C7451D0ED166006A44C2 /* Others */,
+				2EB1C7461D0ED166006A44C2 /* Views */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		2EB1C7431D0ED166006A44C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7701D0EE7A7006A44C2 /* ZYNHistoryViewController.h */,
+				2EB1C7711D0EE7A7006A44C2 /* ZYNHistoryViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EB1C7441D0ED166006A44C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EB1C7451D0ED166006A44C2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2EB1C7461D0ED166006A44C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EB1C7481D0ED166006A44C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2E7AEF811D0FA9DA000AB04C /* Category */,
+				2EB1C7491D0ED166006A44C2 /* Controllers */,
+				2EB1C74E1D0ED166006A44C2 /* Models */,
+				2EB1C74F1D0ED166006A44C2 /* Others */,
+				2EB1C7501D0ED166006A44C2 /* Views */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2EB1C7491D0ED166006A44C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C74A1D0ED166006A44C2 /* ZYNNavigationController.h */,
+				2EB1C74B1D0ED166006A44C2 /* ZYNNavigationController.m */,
+				2EB1C74C1D0ED166006A44C2 /* ZYNTabBarController.h */,
+				2EB1C74D1D0ED166006A44C2 /* ZYNTabBarController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EB1C74E1D0ED166006A44C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EB1C74F1D0ED166006A44C2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7611D0ED3A2006A44C2 /* AppDelegate.h */,
+				2EB1C7621D0ED3A2006A44C2 /* AppDelegate.m */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2EB1C7501D0ED166006A44C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7641D0EDD7C006A44C2 /* ZYNBottomView.h */,
+				2EB1C7651D0EDD7C006A44C2 /* ZYNBottomView.m */,
+				2EB1C7671D0EE2B6006A44C2 /* ZYNBottomButton.h */,
+				2EB1C7681D0EE2B6006A44C2 /* ZYNBottomButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2EB1C7511D0ED166006A44C2 /* MyLottery */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7521D0ED166006A44C2 /* Controllers */,
+				2EB1C7531D0ED166006A44C2 /* Models */,
+				2EB1C7541D0ED166006A44C2 /* Others */,
+				2EB1C7551D0ED166006A44C2 /* Views */,
+			);
+			path = MyLottery;
+			sourceTree = "<group>";
+		};
+		2EB1C7521D0ED166006A44C2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2EB1C7731D0EE7B8006A44C2 /* ZYNMyLotteryViewController.h */,
+				2EB1C7741D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m */,
+				2EF0BD0D1D1128BE000D0E67 /* ZYNSettingController.h */,
+				2EF0BD0E1D1128BE000D0E67 /* ZYNSettingController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2EB1C7531D0ED166006A44C2 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2EB1C7541D0ED166006A44C2 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2EB1C7551D0ED166006A44C2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EB1C6E31D0EC930006A44C2 /* NETLottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EB1C6FB1D0EC930006A44C2 /* Build configuration list for PBXNativeTarget "NETLottery" */;
+			buildPhases = (
+				2EB1C6E01D0EC930006A44C2 /* Sources */,
+				2EB1C6E11D0EC930006A44C2 /* Frameworks */,
+				2EB1C6E21D0EC930006A44C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NETLottery;
+			productName = NETLottery;
+			productReference = 2EB1C6E41D0EC930006A44C2 /* NETLottery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EB1C6DC1D0EC930006A44C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZYN;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = zyn;
+				TargetAttributes = {
+					2EB1C6E31D0EC930006A44C2 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 95X9N24D2E;
+					};
+				};
+			};
+			buildConfigurationList = 2EB1C6DF1D0EC930006A44C2 /* Build configuration list for PBXProject "NETLottery" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EB1C6DB1D0EC930006A44C2;
+			productRefGroup = 2EB1C6E51D0EC930006A44C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EB1C6E31D0EC930006A44C2 /* NETLottery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EB1C6E21D0EC930006A44C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */,
+				2E0AFB941D101E0A00375E3B /* discover.plist in Resources */,
+				2EF0BD1D1D114711000D0E67 /* settingData.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EB1C6E01D0EC930006A44C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E0AFBB41D10234500375E3B /* MASConstraint.m in Sources */,
+				2E0AFB971D10215500375E3B /* ZYNDiscoverCell.m in Sources */,
+				2E0AFBBC1D10234500375E3B /* ViewController+MASAdditions.m in Sources */,
+				2EF0BD1B1D113B1B000D0E67 /* ZYNCategoryButton.m in Sources */,
+				2EF0BD0F1D1128BE000D0E67 /* ZYNSettingController.m in Sources */,
+				2EB1C6E91D0EC930006A44C2 /* main.m in Sources */,
+				2EB1C75B1D0ED166006A44C2 /* ZYNNavigationController.m in Sources */,
+				2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */,
+				2E0AFBB31D10234500375E3B /* MASCompositeConstraint.m in Sources */,
+				2EB1C76F1D0EE79A006A44C2 /* ZYNArenaViewController.m in Sources */,
+				2EF0BD151D1136DE000D0E67 /* ZYNLotteryNumberController.m in Sources */,
+				2E0AFBB51D10234500375E3B /* MASConstraintMaker.m in Sources */,
+				2E0AFBBB1D10234500375E3B /* View+MASAdditions.m in Sources */,
+				2E0AFB921D10115200375E3B /* UIImage+ZYNResizable.m in Sources */,
+				2E0AFBB71D10234500375E3B /* MASViewAttribute.m in Sources */,
+				2EB1C7691D0EE2B6006A44C2 /* ZYNBottomButton.m in Sources */,
+				2E0AFBBA1D10234500375E3B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				2EB1C76C1D0EE783006A44C2 /* ZYNHallViewController.m in Sources */,
+				2EB1C7721D0EE7A7006A44C2 /* ZYNHistoryViewController.m in Sources */,
+				2EB1C7751D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m in Sources */,
+				2E0AFBB91D10234500375E3B /* NSArray+MASAdditions.m in Sources */,
+				2EB1C75C1D0ED166006A44C2 /* ZYNTabBarController.m in Sources */,
+				2E0AFBB81D10234500375E3B /* MASViewConstraint.m in Sources */,
+				2EB1C7661D0EDD7C006A44C2 /* ZYNBottomView.m in Sources */,
+				2E0AFBC41D102B9000375E3B /* ZYNDiscoverViewController.m in Sources */,
+				2E0AFBB61D10234500375E3B /* MASLayoutConstraint.m in Sources */,
+				2EF0BD121D1136B2000D0E67 /* ZYNGroupBuyController.m in Sources */,
+				2EB1C7631D0ED3A2006A44C2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2EB1C6F91D0EC930006A44C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2EB1C6FA1D0EC930006A44C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EB1C6FC1D0EC930006A44C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./NETLottery/PrefixHeader.pch;
+				INFOPLIST_FILE = NETLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyn.NETLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2EB1C6FD1D0EC930006A44C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = ./NETLottery/PrefixHeader.pch;
+				INFOPLIST_FILE = NETLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zyn.NETLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EB1C6DF1D0EC930006A44C2 /* Build configuration list for PBXProject "NETLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB1C6F91D0EC930006A44C2 /* Debug */,
+				2EB1C6FA1D0EC930006A44C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EB1C6FB1D0EC930006A44C2 /* Build configuration list for PBXNativeTarget "NETLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EB1C6FC1D0EC930006A44C2 /* Debug */,
+				2EB1C6FD1D0EC930006A44C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EB1C6DC1D0EC930006A44C2 /* Project object */;
+}

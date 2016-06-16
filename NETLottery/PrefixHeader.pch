@@ -1,0 +1,31 @@
+//
+//  PrefixHeader.pch
+//  NETLottery
+//
+//  Created by zyn on 16/6/13.
+//  Copyright © 2016年 zyn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// 如果当前是OC的代码就用下面的这些东西
+# if __OBJC__
+
+#import "UIView+ZYN_Extension.h"
+#import "UIImage+ZYNResizable.h"
+
+
+// 自定义输入日志 Log
+#ifdef  DEBUG
+#define ZYNLog(...) NSLog(__VA_ARGS__)
+#else // 发布后就不能输入了
+#define ZYNLog(...)
+#endif
+
+
+#define ZYNRondomColor [UIColor colorWithRed:arc4random_uniform(256) / 255.0 green:arc4random_uniform(256) / 255.0 blue:arc4random_uniform(256) / 255.0 alpha:1.0]
+
+
+#endif
+#endif /* PrefixHeader_pch */
