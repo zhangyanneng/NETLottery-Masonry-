@@ -17,6 +17,7 @@
 
 + (void)initialize {
     // 1.获取导航条的外观代理对象
+    //外观代理对象决定navBar将来展示的效果
     UINavigationBar *navBar = [UINavigationBar appearance];
     // 2.设置导航条背景
     [navBar setBackgroundImage:[UIImage imageNamed:@"NavBar64"] forBarMetrics:UIBarMetricsDefault];
@@ -29,7 +30,6 @@
     [navBar setTintColor:[UIColor whiteColor]];
  
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -50,6 +50,7 @@
 
 #pragma mark -  设置子控件的约束
 - (void)layoutSubviews {
+    [super layoutSubviews];
     //设置子控件的布局
     CGFloat btnW = self.bounds.size.width / self.subviews.count;
     CGFloat btnH = self.bounds.size.height;
@@ -67,6 +68,6 @@
 //    ZYNBottomButton *btn = self.subviews.firstObject;
 //    btn.selected = YES;
 //    _selButton = btn;
-    
+    ZYNLog(@"111111");
 }
 @end
