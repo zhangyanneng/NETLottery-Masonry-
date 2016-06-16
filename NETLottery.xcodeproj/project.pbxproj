@@ -517,7 +517,7 @@
 			attributes = {
 				CLASSPREFIX = ZYN;
 				LastUpgradeCheck = 0730;
-				ORGANIZATIONNAME = zyn;
+				ORGANIZATIONNAME = "张艳能";
 				TargetAttributes = {
 					2EB1C6E31D0EC930006A44C2 = {
 						CreatedOnToolsVersion = 7.3.1;

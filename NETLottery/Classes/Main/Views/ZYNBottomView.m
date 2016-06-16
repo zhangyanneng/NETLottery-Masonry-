@@ -59,7 +59,7 @@
     [self.subviews enumerateObjectsUsingBlock:^(__kindof ZYNBottomButton * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         CGFloat btnX = idx * btnW;
         obj.frame = CGRectMake(btnX, btnY, btnW, btnH);
-        if (idx == 0) {
+        if (idx == 0 && !_selButton) {
             obj.selected = YES;
             _selButton = obj;
         }
@@ -68,6 +68,5 @@
 //    ZYNBottomButton *btn = self.subviews.firstObject;
 //    btn.selected = YES;
 //    _selButton = btn;
-    ZYNLog(@"111111");
 }
 @end

@@ -34,6 +34,8 @@
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:leftBtn];
     //配置右边按钮
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"Mylottery_config"] style:UIBarButtonItemStylePlain target:self action:@selector(rightBarBtnClick)];
+    //配置返回按钮
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
     
     //配置主界面
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"LoginScreen"]];
