@@ -4,82 +4,140 @@
 <array>
 	<dict>
 		<key>ZHeader</key>
-		<string>兑换码头部</string>
+		<string></string>
 		<key>ZFooter</key>
 		<string></string>
 		<key>ZItems</key>
 		<array>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>RedeemCode</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>使用兑换码</string>
+				<key>ZAccessoryType</key>
+				<string>UIImageView</string>
+				<key>ZAccessoryName</key>
+				<string>arrow_right</string>
+				<key>ZTargetVc</key>
+				<string>ZYNRedeemCodeViewController</string>
+				<key>ZPlistName</key>
+				<string></string>
 			</dict>
 		</array>
 	</dict>
 	<dict>
 		<key>ZHeader</key>
-		<string>兑换码头部</string>
+		<string></string>
 		<key>ZFooter</key>
 		<string></string>
 		<key>ZItems</key>
 		<array>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>MorePush</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>推送和提醒</string>
+				<key>ZAccessoryType</key>
+				<string>UIImageView</string>
+				<key>ZAccessoryName</key>
+				<string>arrow_right</string>
+				<key>ZPlistName</key>
+				<string>settingPush.plist</string>
+				<key>ZTargetVc</key>
+				<string>ZYNSettingController</string>
 			</dict>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>more_homeshake</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>摇一摇机选</string>
+				<key>ZAccessoryType</key>
+				<string>UISwitch</string>
+				<key>ZAccessoryName</key>
+				<string></string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>sound_Effect</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>声音效果</string>
+				<key>ZAccessoryType</key>
+				<string>UISwitch</string>
+				<key>ZAccessoryName</key>
+				<string></string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>More_LotteryRecommend</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>购彩小助手</string>
+				<key>ZAccessoryType</key>
+				<string>UISwitch</string>
+				<key>ZAccessoryName</key>
+				<string></string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 		</array>
 	</dict>
 	<dict>
 		<key>ZHeader</key>
-		<string>兑换码头部</string>
+		<string></string>
 		<key>ZFooter</key>
 		<string></string>
 		<key>ZItems</key>
 		<array>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>MoreUpdate</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>检查新版本</string>
+				<key>ZAccessoryType</key>
+				<string>UIImageView</string>
+				<key>ZAccessoryName</key>
+				<string>arrow_right</string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>MoreShare</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>分享</string>
+				<key>ZAccessoryType</key>
+				<string>UIImageView</string>
+				<key>ZAccessoryName</key>
+				<string>arrow_right</string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>MoreNetease</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>产品推荐</string>
+				<key>ZAccessoryType</key>
+				<string>UIImageView</string>
+				<key>ZAccessoryName</key>
+				<string>arrow_right</string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 			<dict>
-				<key>icon</key>
+				<key>ZIcon</key>
 				<string>MoreAbout</string>
-				<key>title</key>
+				<key>ZTitle</key>
 				<string>关于</string>
+				<key>ZAccessoryType</key>
+				<string>UIImageView</string>
+				<key>ZAccessoryName</key>
+				<string>arrow_right</string>
+				<key>ZPlistName</key>
+				<string>settingData.plist</string>
 			</dict>
 		</array>
 	</dict>

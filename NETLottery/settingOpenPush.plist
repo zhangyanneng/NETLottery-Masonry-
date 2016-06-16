@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>New item</key>
+		<dict>
+			<key>ZHeader</key>
+			<string>打开设置后，立即接受推送消息</string>
+			<key>ZFooter</key>
+			<string></string>
+			<key>ZItems</key>
+			<array>
+				<dict>
+					<key>ZTitle</key>
+					<string>双色球</string>
+					<key>ZSubTitle</key>
+					<string>每周二、四、日开奖</string>
+					<key>ZAccessoryType</key>
+					<string>UISwitch</string>
+				</dict>
+				<dict>
+					<key>ZTitle</key>
+					<string>大乐透</string>
+					<key>ZSubTitle</key>
+					<string>每周二、四、日开奖</string>
+					<key>ZAccessoryType</key>
+					<string>UISwitch</string>
+				</dict>
+				<dict>
+					<key>ZTitle</key>
+					<string>3D</string>
+					<key>ZSubTitle</key>
+					<string>每周二、四、日开奖</string>
+					<key>ZAccessoryType</key>
+					<string>UISwitch</string>
+				</dict>
+				<dict>
+					<key>ZTitle</key>
+					<string>七乐彩</string>
+					<key>ZSubTitle</key>
+					<string>每周二、四、日开奖</string>
+					<key>ZAccessoryType</key>
+					<string>UISwitch</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</array>
+</plist>

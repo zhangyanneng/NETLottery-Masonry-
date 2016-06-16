@@ -10,4 +10,6 @@
 
 @interface ZYNSettingController : UITableViewController
 
+@property (nonatomic,strong) NSString *plistName;
+
 @end

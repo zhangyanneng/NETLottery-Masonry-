@@ -90,20 +90,21 @@
 
 - (void)rightBarBtnClick {
     
-    ZYNSettingController *setting = [[ZYNSettingController alloc] initWithStyle:UITableViewStyleGrouped];
+    ZYNSettingController *settingVc = [[ZYNSettingController alloc] init];
+    settingVc.plistName = @"settingData.plist";
     
-    [self.navigationController pushViewController:setting animated:YES];
+    settingVc.navigationItem.title = @"设置";
+    
+//    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+//    [rightBtn setTitle:@"常见问题" forState:UIControlStateNormal];
+//    
+//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+//    settingVc.navigationItem.rightBarButtonItem = rightItem;
+    
+    
+    
+    [self.navigationController pushViewController:settingVc animated:YES];
     
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

@@ -21,6 +21,10 @@
 		2E0AFBBB1D10234500375E3B /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBAF1D10234400375E3B /* View+MASAdditions.m */; };
 		2E0AFBBC1D10234500375E3B /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBB21D10234400375E3B /* ViewController+MASAdditions.m */; };
 		2E0AFBC41D102B9000375E3B /* ZYNDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFBC31D102B9000375E3B /* ZYNDiscoverViewController.m */; };
+		2E2B0ACF1D12F2E5004C78F7 /* ZYNSettingHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B0ACE1D12F2E5004C78F7 /* ZYNSettingHomeCell.m */; };
+		2E2B0AD11D12F520004C78F7 /* settingOpenPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */; };
+		2E41D7B61D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41D7B51D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m */; };
+		2E41D7B91D12D022000DA6C1 /* settingPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E41D7B81D12D022000DA6C1 /* settingPush.plist */; };
 		2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */; };
 		2EB1C6E91D0EC930006A44C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C6E81D0EC930006A44C2 /* main.m */; };
 		2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */; };
@@ -73,6 +77,12 @@
 		2E0AFBB21D10234400375E3B /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
 		2E0AFBC21D102B9000375E3B /* ZYNDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNDiscoverViewController.h; sourceTree = "<group>"; };
 		2E0AFBC31D102B9000375E3B /* ZYNDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNDiscoverViewController.m; sourceTree = "<group>"; };
+		2E2B0ACD1D12F2E5004C78F7 /* ZYNSettingHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNSettingHomeCell.h; sourceTree = "<group>"; };
+		2E2B0ACE1D12F2E5004C78F7 /* ZYNSettingHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNSettingHomeCell.m; sourceTree = "<group>"; };
+		2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingOpenPush.plist; sourceTree = "<group>"; };
+		2E41D7B41D12CB05000DA6C1 /* ZYNRedeemCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNRedeemCodeViewController.h; sourceTree = "<group>"; };
+		2E41D7B51D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNRedeemCodeViewController.m; sourceTree = "<group>"; };
+		2E41D7B81D12D022000DA6C1 /* settingPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingPush.plist; sourceTree = "<group>"; };
 		2E7AEF821D0FAA0E000AB04C /* UIView+ZYN_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYN_Extension.h"; sourceTree = "<group>"; };
 		2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYN_Extension.m"; sourceTree = "<group>"; };
 		2EB1C6E41D0EC930006A44C2 /* NETLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -160,6 +170,27 @@
 			path = Masonry;
 			sourceTree = "<group>";
 		};
+		2E41D7B31D12C26B000DA6C1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2EF0BD0D1D1128BE000D0E67 /* ZYNSettingController.h */,
+				2EF0BD0E1D1128BE000D0E67 /* ZYNSettingController.m */,
+				2E41D7B41D12CB05000DA6C1 /* ZYNRedeemCodeViewController.h */,
+				2E41D7B51D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m */,
+			);
+			name = Setting;
+			sourceTree = "<group>";
+		};
+		2E41D7B71D12CFFB000DA6C1 /* setting */ = {
+			isa = PBXGroup;
+			children = (
+				2EF0BD1C1D114711000D0E67 /* settingData.plist */,
+				2E41D7B81D12D022000DA6C1 /* settingPush.plist */,
+				2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */,
+			);
+			name = setting;
+			sourceTree = "<group>";
+		};
 		2E7AEF811D0FA9DA000AB04C /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,12 +231,12 @@
 		2EB1C6E71D0EC930006A44C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2E41D7B71D12CFFB000DA6C1 /* setting */,
 				2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */,
 				2EB1C6F81D0EC930006A44C2 /* Info.plist */,
 				2EB1C6E81D0EC930006A44C2 /* main.m */,
 				2EB1C6FF1D0ECA54006A44C2 /* PrefixHeader.pch */,
 				2E0AFB931D101E0A00375E3B /* discover.plist */,
-				2EF0BD1C1D114711000D0E67 /* settingData.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -460,10 +491,9 @@
 		2EB1C7521D0ED166006A44C2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				2E41D7B31D12C26B000DA6C1 /* Setting */,
 				2EB1C7731D0EE7B8006A44C2 /* ZYNMyLotteryViewController.h */,
 				2EB1C7741D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m */,
-				2EF0BD0D1D1128BE000D0E67 /* ZYNSettingController.h */,
-				2EF0BD0E1D1128BE000D0E67 /* ZYNSettingController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -485,6 +515,8 @@
 		2EB1C7551D0ED166006A44C2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E2B0ACD1D12F2E5004C78F7 /* ZYNSettingHomeCell.h */,
+				2E2B0ACE1D12F2E5004C78F7 /* ZYNSettingHomeCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -549,6 +581,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */,
+				2E2B0AD11D12F520004C78F7 /* settingOpenPush.plist in Resources */,
+				2E41D7B91D12D022000DA6C1 /* settingPush.plist in Resources */,
 				2E0AFB941D101E0A00375E3B /* discover.plist in Resources */,
 				2EF0BD1D1D114711000D0E67 /* settingData.plist in Resources */,
 			);
@@ -566,6 +600,7 @@
 				2E0AFBBC1D10234500375E3B /* ViewController+MASAdditions.m in Sources */,
 				2EF0BD1B1D113B1B000D0E67 /* ZYNCategoryButton.m in Sources */,
 				2EF0BD0F1D1128BE000D0E67 /* ZYNSettingController.m in Sources */,
+				2E2B0ACF1D12F2E5004C78F7 /* ZYNSettingHomeCell.m in Sources */,
 				2EB1C6E91D0EC930006A44C2 /* main.m in Sources */,
 				2EB1C75B1D0ED166006A44C2 /* ZYNNavigationController.m in Sources */,
 				2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */,
@@ -588,6 +623,7 @@
 				2E0AFBC41D102B9000375E3B /* ZYNDiscoverViewController.m in Sources */,
 				2E0AFBB61D10234500375E3B /* MASLayoutConstraint.m in Sources */,
 				2EF0BD121D1136B2000D0E67 /* ZYNGroupBuyController.m in Sources */,
+				2E41D7B61D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m in Sources */,
 				2EB1C7631D0ED3A2006A44C2 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
