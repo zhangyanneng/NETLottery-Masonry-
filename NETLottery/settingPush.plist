@@ -16,6 +16,10 @@
 				<string>UIImageView</string>
 				<key>ZAccessoryName</key>
 				<string>arrow_right</string>
+				<key>ZTargetVc</key>
+				<string>ZYNSettingController</string>
+				<key>ZPlistName</key>
+				<string>settingOpenPush.plist</string>
 			</dict>
 			<dict>
 				<key>ZTitle</key>
@@ -25,7 +29,9 @@
 				<key>ZAccessoryName</key>
 				<string>arrow_right</string>
 				<key>ZTargetVc</key>
-				<string>ZYNSettingController</string>
+				<string>ZYNScorePushController</string>
+				<key>ZPlistName</key>
+				<string>settingScorePush.plist</string>
 			</dict>
 			<dict>
 				<key>ZTitle</key>
@@ -34,6 +40,8 @@
 				<string>UIImageView</string>
 				<key>ZAccessoryName</key>
 				<string>arrow_right</string>
+				<key>ZPlistName</key>
+				<string>settingWinPush.plist</string>
 				<key>ZTargetVc</key>
 				<string>ZYNSettingController</string>
 			</dict>
@@ -46,6 +54,8 @@
 				<string>arrow_right</string>
 				<key>ZTargetVc</key>
 				<string>ZYNSettingController</string>
+				<key>ZPlistName</key>
+				<string>settingBuyPush.plist</string>
 			</dict>
 		</array>
 	</dict>

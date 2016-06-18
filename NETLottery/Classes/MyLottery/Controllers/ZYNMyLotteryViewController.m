@@ -9,6 +9,7 @@
 #import "ZYNMyLotteryViewController.h"
 #import "ZYNSettingController.h"
 #import "Masonry.h"
+#import "ZYNQuestionTipsController.h"
 
 @interface ZYNMyLotteryViewController ()
 
@@ -72,11 +73,13 @@
         make.top.mas_equalTo(imageView.mas_bottom).offset(60); // y
         make.left.mas_equalTo(self.view).offset(20); // x
         make.right.mas_equalTo(self.view).offset(-20); //width
+        make.height.mas_equalTo(@(30)); //height
     }];
     [signBtn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.mas_equalTo(loginBtn.mas_bottom).offset(20); // y
         make.left.mas_equalTo(self.view).offset(20); // x
         make.right.mas_equalTo(self.view).offset(-20); //width
+        make.height.mas_equalTo(@(30)); //height
     }];
 }
 #pragma mark - 按钮响应事件
@@ -95,15 +98,26 @@
     
     settingVc.navigationItem.title = @"设置";
     
-//    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//    [rightBtn setTitle:@"常见问题" forState:UIControlStateNormal];
-//    
-//    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
-//    settingVc.navigationItem.rightBarButtonItem = rightItem;
+    UIButton *rightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [rightBtn setTitle:@"常见问题" forState:UIControlStateNormal];
+    [rightBtn sizeToFit];
+    [rightBtn addTarget:self action:@selector(helpTipsBtnClick) forControlEvents:UIControlEventTouchUpInside];
     
-    
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithCustomView:rightBtn];
+    settingVc.navigationItem.rightBarButtonItem = rightItem;
     
     [self.navigationController pushViewController:settingVc animated:YES];
+    
+}
+
+#pragma mark - 常见问题btn
+/**
+ *  因为最终都是拿到self.navigationController 去push，都是同一个导航控制器
+ */
+- (void)helpTipsBtnClick {
+    
+    ZYNQuestionTipsController *questionVc = [[ZYNQuestionTipsController alloc] init];
+    [self.navigationController pushViewController:questionVc animated:YES];
     
 }
 

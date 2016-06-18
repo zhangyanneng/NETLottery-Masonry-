@@ -7,6 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E0520751D138C1F00FDD361 /* ZYNScorePushController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0520741D138C1F00FDD361 /* ZYNScorePushController.m */; };
+		2E0520781D138CCD00FDD361 /* settingPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520761D138CCD00FDD361 /* settingPush.plist */; };
+		2E0520791D138CCD00FDD361 /* settingScorePush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520771D138CCD00FDD361 /* settingScorePush.plist */; };
+		2E05207B1D13985800FDD361 /* settingShare.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E05207A1D13985800FDD361 /* settingShare.plist */; };
+		2E05207D1D1399F400FDD361 /* settingWinPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E05207C1D1399F400FDD361 /* settingWinPush.plist */; };
+		2E05207F1D139AAC00FDD361 /* settingBuyPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E05207E1D139AAC00FDD361 /* settingBuyPush.plist */; };
+		2E0520821D139BB300FDD361 /* ZYNProductController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0520811D139BB300FDD361 /* ZYNProductController.m */; };
+		2E0520A41D139C7600FDD361 /* help.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520841D139C7600FDD361 /* help.json */; };
+		2E0520A51D139C7600FDD361 /* bjdc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520861D139C7600FDD361 /* bjdc_howto.html */; };
+		2E0520A61D139C7600FDD361 /* coupon_help.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520871D139C7600FDD361 /* coupon_help.html */; };
+		2E0520A71D139C7600FDD361 /* credit_help.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520881D139C7600FDD361 /* credit_help.html */; };
+		2E0520A81D139C7600FDD361 /* dlt_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520891D139C7600FDD361 /* dlt_howto.html */; };
+		2E0520A91D139C7600FDD361 /* f9_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05208A1D139C7600FDD361 /* f9_howto.html */; };
+		2E0520AA1D139C7600FDD361 /* gdy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05208B1D139C7600FDD361 /* gdy11_howto.html */; };
+		2E0520AB1D139C7600FDD361 /* group_record.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05208C1D139C7600FDD361 /* group_record.html */; };
+		2E0520AC1D139C7600FDD361 /* help.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05208D1D139C7600FDD361 /* help.html */; };
+		2E0520AD1D139C7600FDD361 /* helpGroupBuy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05208E1D139C7600FDD361 /* helpGroupBuy.html */; };
+		2E0520AE1D139C7600FDD361 /* jclq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05208F1D139C7600FDD361 /* jclq_howto.html */; };
+		2E0520AF1D139C7600FDD361 /* jczq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520901D139C7600FDD361 /* jczq_howto.html */; };
+		2E0520B01D139C7600FDD361 /* jxssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520911D139C7600FDD361 /* jxssc_howto.html */; };
+		2E0520B11D139C7600FDD361 /* jxy11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520921D139C7600FDD361 /* jxy11_howto.html */; };
+		2E0520B21D139C7600FDD361 /* k2_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520931D139C7600FDD361 /* k2_howto.html */; };
+		2E0520B31D139C7600FDD361 /* k3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520941D139C7600FDD361 /* k3_howto.html */; };
+		2E0520B41D139C7600FDD361 /* kl8_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520951D139C7600FDD361 /* kl8_howto.html */; };
+		2E0520B51D139C7600FDD361 /* lk11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520961D139C7600FDD361 /* lk11_howto.html */; };
+		2E0520B61D139C7600FDD361 /* networkconnectedfailed.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520971D139C7600FDD361 /* networkconnectedfailed.html */; };
+		2E0520B71D139C7600FDD361 /* pl3_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520981D139C7600FDD361 /* pl3_howto.html */; };
+		2E0520B81D139C7600FDD361 /* pl5_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520991D139C7600FDD361 /* pl5_howto.html */; };
+		2E0520B91D139C7600FDD361 /* qlc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05209A1D139C7600FDD361 /* qlc_howto.html */; };
+		2E0520BA1D139C7600FDD361 /* qxc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05209B1D139C7600FDD361 /* qxc_howto.html */; };
+		2E0520BB1D139C7600FDD361 /* rule.css in Resources */ = {isa = PBXBuildFile; fileRef = 2E05209C1D139C7600FDD361 /* rule.css */; };
+		2E0520BC1D139C7600FDD361 /* sfc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05209D1D139C7600FDD361 /* sfc_howto.html */; };
+		2E0520BD1D139C7600FDD361 /* ssc_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05209E1D139C7600FDD361 /* ssc_howto.html */; };
+		2E0520BE1D139C7600FDD361 /* ssq_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E05209F1D139C7600FDD361 /* ssq_howto.html */; };
+		2E0520BF1D139C7600FDD361 /* x3d_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520A01D139C7600FDD361 /* x3d_howto.html */; };
+		2E0520C01D139C7600FDD361 /* y11_howto.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520A11D139C7600FDD361 /* y11_howto.html */; };
+		2E0520C11D139C7600FDD361 /* znzh.html in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520A21D139C7600FDD361 /* znzh.html */; };
+		2E0520C21D139C7600FDD361 /* more_project.json in Resources */ = {isa = PBXBuildFile; fileRef = 2E0520A31D139C7600FDD361 /* more_project.json */; };
+		2E0520C51D139CB100FDD361 /* ZYNProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0520C41D139CB100FDD361 /* ZYNProduct.m */; };
+		2E0520C91D139D2300FDD361 /* ZYNProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0520C71D139D2300FDD361 /* ZYNProductCell.m */; };
 		2E0AFB921D10115200375E3B /* UIImage+ZYNResizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFB911D10115200375E3B /* UIImage+ZYNResizable.m */; };
 		2E0AFB941D101E0A00375E3B /* discover.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E0AFB931D101E0A00375E3B /* discover.plist */; };
 		2E0AFB971D10215500375E3B /* ZYNDiscoverCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E0AFB961D10215500375E3B /* ZYNDiscoverCell.m */; };
@@ -24,7 +64,11 @@
 		2E2B0ACF1D12F2E5004C78F7 /* ZYNSettingHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2B0ACE1D12F2E5004C78F7 /* ZYNSettingHomeCell.m */; };
 		2E2B0AD11D12F520004C78F7 /* settingOpenPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */; };
 		2E41D7B61D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E41D7B51D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m */; };
-		2E41D7B91D12D022000DA6C1 /* settingPush.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E41D7B81D12D022000DA6C1 /* settingPush.plist */; };
+		2E4FD8B91D13D92800E7CF14 /* ZYNProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E4FD8B81D13D92800E7CF14 /* ZYNProductCell.xib */; };
+		2E4FD8BC1D13DA5100E7CF14 /* ZYNQuestionTipsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FD8BB1D13DA5100E7CF14 /* ZYNQuestionTipsController.m */; };
+		2E4FD8BF1D13DB0800E7CF14 /* ZYNQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FD8BE1D13DB0800E7CF14 /* ZYNQuestion.m */; };
+		2E4FD8C21D13E22C00E7CF14 /* ZYNTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FD8C11D13E22C00E7CF14 /* ZYNTipsViewController.m */; };
+		2E6600AF1D155BD100746FC3 /* ZYNGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6600AE1D155BD100746FC3 /* ZYNGuideViewController.m */; };
 		2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */; };
 		2EB1C6E91D0EC930006A44C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C6E81D0EC930006A44C2 /* main.m */; };
 		2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */; };
@@ -45,6 +89,50 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E0520731D138C1F00FDD361 /* ZYNScorePushController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNScorePushController.h; sourceTree = "<group>"; };
+		2E0520741D138C1F00FDD361 /* ZYNScorePushController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNScorePushController.m; sourceTree = "<group>"; };
+		2E0520761D138CCD00FDD361 /* settingPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingPush.plist; sourceTree = "<group>"; };
+		2E0520771D138CCD00FDD361 /* settingScorePush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingScorePush.plist; sourceTree = "<group>"; };
+		2E05207A1D13985800FDD361 /* settingShare.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingShare.plist; sourceTree = "<group>"; };
+		2E05207C1D1399F400FDD361 /* settingWinPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingWinPush.plist; sourceTree = "<group>"; };
+		2E05207E1D139AAC00FDD361 /* settingBuyPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingBuyPush.plist; sourceTree = "<group>"; };
+		2E0520801D139BB300FDD361 /* ZYNProductController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNProductController.h; sourceTree = "<group>"; };
+		2E0520811D139BB300FDD361 /* ZYNProductController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNProductController.m; sourceTree = "<group>"; };
+		2E0520841D139C7600FDD361 /* help.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = help.json; sourceTree = "<group>"; };
+		2E0520861D139C7600FDD361 /* bjdc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = bjdc_howto.html; sourceTree = "<group>"; };
+		2E0520871D139C7600FDD361 /* coupon_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = coupon_help.html; sourceTree = "<group>"; };
+		2E0520881D139C7600FDD361 /* credit_help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = credit_help.html; sourceTree = "<group>"; };
+		2E0520891D139C7600FDD361 /* dlt_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dlt_howto.html; sourceTree = "<group>"; };
+		2E05208A1D139C7600FDD361 /* f9_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = f9_howto.html; sourceTree = "<group>"; };
+		2E05208B1D139C7600FDD361 /* gdy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = gdy11_howto.html; sourceTree = "<group>"; };
+		2E05208C1D139C7600FDD361 /* group_record.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = group_record.html; sourceTree = "<group>"; };
+		2E05208D1D139C7600FDD361 /* help.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = help.html; sourceTree = "<group>"; };
+		2E05208E1D139C7600FDD361 /* helpGroupBuy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = helpGroupBuy.html; sourceTree = "<group>"; };
+		2E05208F1D139C7600FDD361 /* jclq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jclq_howto.html; sourceTree = "<group>"; };
+		2E0520901D139C7600FDD361 /* jczq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jczq_howto.html; sourceTree = "<group>"; };
+		2E0520911D139C7600FDD361 /* jxssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxssc_howto.html; sourceTree = "<group>"; };
+		2E0520921D139C7600FDD361 /* jxy11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = jxy11_howto.html; sourceTree = "<group>"; };
+		2E0520931D139C7600FDD361 /* k2_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k2_howto.html; sourceTree = "<group>"; };
+		2E0520941D139C7600FDD361 /* k3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = k3_howto.html; sourceTree = "<group>"; };
+		2E0520951D139C7600FDD361 /* kl8_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = kl8_howto.html; sourceTree = "<group>"; };
+		2E0520961D139C7600FDD361 /* lk11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = lk11_howto.html; sourceTree = "<group>"; };
+		2E0520971D139C7600FDD361 /* networkconnectedfailed.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = networkconnectedfailed.html; sourceTree = "<group>"; };
+		2E0520981D139C7600FDD361 /* pl3_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl3_howto.html; sourceTree = "<group>"; };
+		2E0520991D139C7600FDD361 /* pl5_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = pl5_howto.html; sourceTree = "<group>"; };
+		2E05209A1D139C7600FDD361 /* qlc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qlc_howto.html; sourceTree = "<group>"; };
+		2E05209B1D139C7600FDD361 /* qxc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = qxc_howto.html; sourceTree = "<group>"; };
+		2E05209C1D139C7600FDD361 /* rule.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = rule.css; sourceTree = "<group>"; };
+		2E05209D1D139C7600FDD361 /* sfc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = sfc_howto.html; sourceTree = "<group>"; };
+		2E05209E1D139C7600FDD361 /* ssc_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssc_howto.html; sourceTree = "<group>"; };
+		2E05209F1D139C7600FDD361 /* ssq_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ssq_howto.html; sourceTree = "<group>"; };
+		2E0520A01D139C7600FDD361 /* x3d_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = x3d_howto.html; sourceTree = "<group>"; };
+		2E0520A11D139C7600FDD361 /* y11_howto.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = y11_howto.html; sourceTree = "<group>"; };
+		2E0520A21D139C7600FDD361 /* znzh.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = znzh.html; sourceTree = "<group>"; };
+		2E0520A31D139C7600FDD361 /* more_project.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = more_project.json; sourceTree = "<group>"; };
+		2E0520C31D139CB100FDD361 /* ZYNProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNProduct.h; sourceTree = "<group>"; };
+		2E0520C41D139CB100FDD361 /* ZYNProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNProduct.m; sourceTree = "<group>"; };
+		2E0520C61D139D2300FDD361 /* ZYNProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNProductCell.h; sourceTree = "<group>"; };
+		2E0520C71D139D2300FDD361 /* ZYNProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNProductCell.m; sourceTree = "<group>"; };
 		2E0AFB901D10115200375E3B /* UIImage+ZYNResizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZYNResizable.h"; sourceTree = "<group>"; };
 		2E0AFB911D10115200375E3B /* UIImage+ZYNResizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZYNResizable.m"; sourceTree = "<group>"; };
 		2E0AFB931D101E0A00375E3B /* discover.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = discover.plist; sourceTree = "<group>"; };
@@ -82,7 +170,15 @@
 		2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingOpenPush.plist; sourceTree = "<group>"; };
 		2E41D7B41D12CB05000DA6C1 /* ZYNRedeemCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNRedeemCodeViewController.h; sourceTree = "<group>"; };
 		2E41D7B51D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNRedeemCodeViewController.m; sourceTree = "<group>"; };
-		2E41D7B81D12D022000DA6C1 /* settingPush.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingPush.plist; sourceTree = "<group>"; };
+		2E4FD8B81D13D92800E7CF14 /* ZYNProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYNProductCell.xib; sourceTree = "<group>"; };
+		2E4FD8BA1D13DA5100E7CF14 /* ZYNQuestionTipsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNQuestionTipsController.h; sourceTree = "<group>"; };
+		2E4FD8BB1D13DA5100E7CF14 /* ZYNQuestionTipsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNQuestionTipsController.m; sourceTree = "<group>"; };
+		2E4FD8BD1D13DB0800E7CF14 /* ZYNQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNQuestion.h; sourceTree = "<group>"; };
+		2E4FD8BE1D13DB0800E7CF14 /* ZYNQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNQuestion.m; sourceTree = "<group>"; };
+		2E4FD8C01D13E22C00E7CF14 /* ZYNTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNTipsViewController.h; sourceTree = "<group>"; };
+		2E4FD8C11D13E22C00E7CF14 /* ZYNTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNTipsViewController.m; sourceTree = "<group>"; };
+		2E6600AD1D155BD100746FC3 /* ZYNGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNGuideViewController.h; sourceTree = "<group>"; };
+		2E6600AE1D155BD100746FC3 /* ZYNGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNGuideViewController.m; sourceTree = "<group>"; };
 		2E7AEF821D0FAA0E000AB04C /* UIView+ZYN_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYN_Extension.h"; sourceTree = "<group>"; };
 		2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYN_Extension.m"; sourceTree = "<group>"; };
 		2EB1C6E41D0EC930006A44C2 /* NETLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -130,6 +226,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E0520831D139C7600FDD361 /* resource */ = {
+			isa = PBXGroup;
+			children = (
+				2E0520841D139C7600FDD361 /* help.json */,
+				2E0520851D139C7600FDD361 /* Html */,
+				2E0520A31D139C7600FDD361 /* more_project.json */,
+			);
+			path = resource;
+			sourceTree = "<group>";
+		};
+		2E0520851D139C7600FDD361 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				2E0520861D139C7600FDD361 /* bjdc_howto.html */,
+				2E0520871D139C7600FDD361 /* coupon_help.html */,
+				2E0520881D139C7600FDD361 /* credit_help.html */,
+				2E0520891D139C7600FDD361 /* dlt_howto.html */,
+				2E05208A1D139C7600FDD361 /* f9_howto.html */,
+				2E05208B1D139C7600FDD361 /* gdy11_howto.html */,
+				2E05208C1D139C7600FDD361 /* group_record.html */,
+				2E05208D1D139C7600FDD361 /* help.html */,
+				2E05208E1D139C7600FDD361 /* helpGroupBuy.html */,
+				2E05208F1D139C7600FDD361 /* jclq_howto.html */,
+				2E0520901D139C7600FDD361 /* jczq_howto.html */,
+				2E0520911D139C7600FDD361 /* jxssc_howto.html */,
+				2E0520921D139C7600FDD361 /* jxy11_howto.html */,
+				2E0520931D139C7600FDD361 /* k2_howto.html */,
+				2E0520941D139C7600FDD361 /* k3_howto.html */,
+				2E0520951D139C7600FDD361 /* kl8_howto.html */,
+				2E0520961D139C7600FDD361 /* lk11_howto.html */,
+				2E0520971D139C7600FDD361 /* networkconnectedfailed.html */,
+				2E0520981D139C7600FDD361 /* pl3_howto.html */,
+				2E0520991D139C7600FDD361 /* pl5_howto.html */,
+				2E05209A1D139C7600FDD361 /* qlc_howto.html */,
+				2E05209B1D139C7600FDD361 /* qxc_howto.html */,
+				2E05209C1D139C7600FDD361 /* rule.css */,
+				2E05209D1D139C7600FDD361 /* sfc_howto.html */,
+				2E05209E1D139C7600FDD361 /* ssc_howto.html */,
+				2E05209F1D139C7600FDD361 /* ssq_howto.html */,
+				2E0520A01D139C7600FDD361 /* x3d_howto.html */,
+				2E0520A11D139C7600FDD361 /* y11_howto.html */,
+				2E0520A21D139C7600FDD361 /* znzh.html */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
 		2E0AFB981D10232600375E3B /* Libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +319,14 @@
 				2EF0BD0E1D1128BE000D0E67 /* ZYNSettingController.m */,
 				2E41D7B41D12CB05000DA6C1 /* ZYNRedeemCodeViewController.h */,
 				2E41D7B51D12CB05000DA6C1 /* ZYNRedeemCodeViewController.m */,
+				2E0520731D138C1F00FDD361 /* ZYNScorePushController.h */,
+				2E0520741D138C1F00FDD361 /* ZYNScorePushController.m */,
+				2E0520801D139BB300FDD361 /* ZYNProductController.h */,
+				2E0520811D139BB300FDD361 /* ZYNProductController.m */,
+				2E4FD8BA1D13DA5100E7CF14 /* ZYNQuestionTipsController.h */,
+				2E4FD8BB1D13DA5100E7CF14 /* ZYNQuestionTipsController.m */,
+				2E4FD8C01D13E22C00E7CF14 /* ZYNTipsViewController.h */,
+				2E4FD8C11D13E22C00E7CF14 /* ZYNTipsViewController.m */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -184,11 +334,56 @@
 		2E41D7B71D12CFFB000DA6C1 /* setting */ = {
 			isa = PBXGroup;
 			children = (
+				2E05207C1D1399F400FDD361 /* settingWinPush.plist */,
+				2E0520761D138CCD00FDD361 /* settingPush.plist */,
+				2E0520771D138CCD00FDD361 /* settingScorePush.plist */,
+				2E05207E1D139AAC00FDD361 /* settingBuyPush.plist */,
 				2EF0BD1C1D114711000D0E67 /* settingData.plist */,
-				2E41D7B81D12D022000DA6C1 /* settingPush.plist */,
+				2E05207A1D13985800FDD361 /* settingShare.plist */,
 				2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */,
 			);
 			name = setting;
+			sourceTree = "<group>";
+		};
+		2E6600A81D155B8500746FC3 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				2E6600A91D155B8500746FC3 /* Controllers */,
+				2E6600AA1D155B8500746FC3 /* Models */,
+				2E6600AB1D155B8500746FC3 /* Others */,
+				2E6600AC1D155B8500746FC3 /* Views */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		2E6600A91D155B8500746FC3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E6600AD1D155BD100746FC3 /* ZYNGuideViewController.h */,
+				2E6600AE1D155BD100746FC3 /* ZYNGuideViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E6600AA1D155B8500746FC3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2E6600AB1D155B8500746FC3 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		2E6600AC1D155B8500746FC3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2E7AEF811D0FA9DA000AB04C /* Category */ = {
@@ -231,6 +426,7 @@
 		2EB1C6E71D0EC930006A44C2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2E0520831D139C7600FDD361 /* resource */,
 				2E41D7B71D12CFFB000DA6C1 /* setting */,
 				2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */,
 				2EB1C6F81D0EC930006A44C2 /* Info.plist */,
@@ -251,6 +447,7 @@
 				2EB1C7361D0ED166006A44C2 /* Discover */,
 				2EB1C7421D0ED166006A44C2 /* History */,
 				2EB1C7511D0ED166006A44C2 /* MyLottery */,
+				2E6600A81D155B8500746FC3 /* Guide */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -501,6 +698,10 @@
 		2EB1C7531D0ED166006A44C2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2E0520C31D139CB100FDD361 /* ZYNProduct.h */,
+				2E0520C41D139CB100FDD361 /* ZYNProduct.m */,
+				2E4FD8BD1D13DB0800E7CF14 /* ZYNQuestion.h */,
+				2E4FD8BE1D13DB0800E7CF14 /* ZYNQuestion.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -517,6 +718,9 @@
 			children = (
 				2E2B0ACD1D12F2E5004C78F7 /* ZYNSettingHomeCell.h */,
 				2E2B0ACE1D12F2E5004C78F7 /* ZYNSettingHomeCell.m */,
+				2E0520C61D139D2300FDD361 /* ZYNProductCell.h */,
+				2E0520C71D139D2300FDD361 /* ZYNProductCell.m */,
+				2E4FD8B81D13D92800E7CF14 /* ZYNProductCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -580,11 +784,47 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E0520B51D139C7600FDD361 /* lk11_howto.html in Resources */,
+				2E0520BF1D139C7600FDD361 /* x3d_howto.html in Resources */,
+				2E0520AD1D139C7600FDD361 /* helpGroupBuy.html in Resources */,
+				2E0520B91D139C7600FDD361 /* qlc_howto.html in Resources */,
+				2E0520A51D139C7600FDD361 /* bjdc_howto.html in Resources */,
+				2E0520BE1D139C7600FDD361 /* ssq_howto.html in Resources */,
+				2E0520AC1D139C7600FDD361 /* help.html in Resources */,
+				2E0520B61D139C7600FDD361 /* networkconnectedfailed.html in Resources */,
+				2E0520A41D139C7600FDD361 /* help.json in Resources */,
+				2E0520AE1D139C7600FDD361 /* jclq_howto.html in Resources */,
+				2E0520B21D139C7600FDD361 /* k2_howto.html in Resources */,
+				2E0520BD1D139C7600FDD361 /* ssc_howto.html in Resources */,
+				2E0520781D138CCD00FDD361 /* settingPush.plist in Resources */,
+				2E05207F1D139AAC00FDD361 /* settingBuyPush.plist in Resources */,
+				2E0520BB1D139C7600FDD361 /* rule.css in Resources */,
 				2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */,
+				2E05207D1D1399F400FDD361 /* settingWinPush.plist in Resources */,
+				2E0520BA1D139C7600FDD361 /* qxc_howto.html in Resources */,
+				2E0520B41D139C7600FDD361 /* kl8_howto.html in Resources */,
+				2E0520C11D139C7600FDD361 /* znzh.html in Resources */,
+				2E0520791D138CCD00FDD361 /* settingScorePush.plist in Resources */,
+				2E0520C01D139C7600FDD361 /* y11_howto.html in Resources */,
 				2E2B0AD11D12F520004C78F7 /* settingOpenPush.plist in Resources */,
-				2E41D7B91D12D022000DA6C1 /* settingPush.plist in Resources */,
+				2E05207B1D13985800FDD361 /* settingShare.plist in Resources */,
+				2E0520AF1D139C7600FDD361 /* jczq_howto.html in Resources */,
+				2E0520AB1D139C7600FDD361 /* group_record.html in Resources */,
+				2E0520B01D139C7600FDD361 /* jxssc_howto.html in Resources */,
+				2E0520AA1D139C7600FDD361 /* gdy11_howto.html in Resources */,
+				2E0520BC1D139C7600FDD361 /* sfc_howto.html in Resources */,
+				2E0520B81D139C7600FDD361 /* pl5_howto.html in Resources */,
+				2E0520A81D139C7600FDD361 /* dlt_howto.html in Resources */,
+				2E0520A71D139C7600FDD361 /* credit_help.html in Resources */,
+				2E0520B11D139C7600FDD361 /* jxy11_howto.html in Resources */,
+				2E4FD8B91D13D92800E7CF14 /* ZYNProductCell.xib in Resources */,
+				2E0520A91D139C7600FDD361 /* f9_howto.html in Resources */,
+				2E0520C21D139C7600FDD361 /* more_project.json in Resources */,
+				2E0520B31D139C7600FDD361 /* k3_howto.html in Resources */,
+				2E0520B71D139C7600FDD361 /* pl3_howto.html in Resources */,
 				2E0AFB941D101E0A00375E3B /* discover.plist in Resources */,
 				2EF0BD1D1D114711000D0E67 /* settingData.plist in Resources */,
+				2E0520A61D139C7600FDD361 /* coupon_help.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,6 +839,7 @@
 				2E0AFB971D10215500375E3B /* ZYNDiscoverCell.m in Sources */,
 				2E0AFBBC1D10234500375E3B /* ViewController+MASAdditions.m in Sources */,
 				2EF0BD1B1D113B1B000D0E67 /* ZYNCategoryButton.m in Sources */,
+				2E4FD8BC1D13DA5100E7CF14 /* ZYNQuestionTipsController.m in Sources */,
 				2EF0BD0F1D1128BE000D0E67 /* ZYNSettingController.m in Sources */,
 				2E2B0ACF1D12F2E5004C78F7 /* ZYNSettingHomeCell.m in Sources */,
 				2EB1C6E91D0EC930006A44C2 /* main.m in Sources */,
@@ -607,19 +848,26 @@
 				2E0AFBB31D10234500375E3B /* MASCompositeConstraint.m in Sources */,
 				2EB1C76F1D0EE79A006A44C2 /* ZYNArenaViewController.m in Sources */,
 				2EF0BD151D1136DE000D0E67 /* ZYNLotteryNumberController.m in Sources */,
+				2E0520751D138C1F00FDD361 /* ZYNScorePushController.m in Sources */,
 				2E0AFBB51D10234500375E3B /* MASConstraintMaker.m in Sources */,
 				2E0AFBBB1D10234500375E3B /* View+MASAdditions.m in Sources */,
 				2E0AFB921D10115200375E3B /* UIImage+ZYNResizable.m in Sources */,
+				2E4FD8BF1D13DB0800E7CF14 /* ZYNQuestion.m in Sources */,
 				2E0AFBB71D10234500375E3B /* MASViewAttribute.m in Sources */,
 				2EB1C7691D0EE2B6006A44C2 /* ZYNBottomButton.m in Sources */,
 				2E0AFBBA1D10234500375E3B /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				2E0520C91D139D2300FDD361 /* ZYNProductCell.m in Sources */,
 				2EB1C76C1D0EE783006A44C2 /* ZYNHallViewController.m in Sources */,
 				2EB1C7721D0EE7A7006A44C2 /* ZYNHistoryViewController.m in Sources */,
 				2EB1C7751D0EE7B8006A44C2 /* ZYNMyLotteryViewController.m in Sources */,
+				2E4FD8C21D13E22C00E7CF14 /* ZYNTipsViewController.m in Sources */,
 				2E0AFBB91D10234500375E3B /* NSArray+MASAdditions.m in Sources */,
+				2E0520821D139BB300FDD361 /* ZYNProductController.m in Sources */,
 				2EB1C75C1D0ED166006A44C2 /* ZYNTabBarController.m in Sources */,
+				2E6600AF1D155BD100746FC3 /* ZYNGuideViewController.m in Sources */,
 				2E0AFBB81D10234500375E3B /* MASViewConstraint.m in Sources */,
 				2EB1C7661D0EDD7C006A44C2 /* ZYNBottomView.m in Sources */,
+				2E0520C51D139CB100FDD361 /* ZYNProduct.m in Sources */,
 				2E0AFBC41D102B9000375E3B /* ZYNDiscoverViewController.m in Sources */,
 				2E0AFBB61D10234500375E3B /* MASLayoutConstraint.m in Sources */,
 				2EF0BD121D1136B2000D0E67 /* ZYNGroupBuyController.m in Sources */,

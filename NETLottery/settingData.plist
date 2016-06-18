@@ -53,10 +53,10 @@
 				<string>摇一摇机选</string>
 				<key>ZAccessoryType</key>
 				<string>UISwitch</string>
-				<key>ZAccessoryName</key>
-				<string></string>
 				<key>ZPlistName</key>
 				<string>settingData.plist</string>
+				<key>ZKeyName</key>
+				<string>setting_more_homeshake</string>
 			</dict>
 			<dict>
 				<key>ZIcon</key>
@@ -65,10 +65,10 @@
 				<string>声音效果</string>
 				<key>ZAccessoryType</key>
 				<string>UISwitch</string>
-				<key>ZAccessoryName</key>
-				<string></string>
 				<key>ZPlistName</key>
 				<string>settingData.plist</string>
+				<key>ZKeyName</key>
+				<string>setting_sound_Effect</string>
 			</dict>
 			<dict>
 				<key>ZIcon</key>
@@ -77,10 +77,10 @@
 				<string>购彩小助手</string>
 				<key>ZAccessoryType</key>
 				<string>UISwitch</string>
-				<key>ZAccessoryName</key>
-				<string></string>
 				<key>ZPlistName</key>
 				<string>settingData.plist</string>
+				<key>ZKeyName</key>
+				<string>setting_more_lotteryRecommend</string>
 			</dict>
 		</array>
 	</dict>
@@ -113,7 +113,9 @@
 				<key>ZAccessoryName</key>
 				<string>arrow_right</string>
 				<key>ZPlistName</key>
-				<string>settingData.plist</string>
+				<string>settingShare.plist</string>
+				<key>ZTargetVc</key>
+				<string>ZYNSettingController</string>
 			</dict>
 			<dict>
 				<key>ZIcon</key>
@@ -125,7 +127,9 @@
 				<key>ZAccessoryName</key>
 				<string>arrow_right</string>
 				<key>ZPlistName</key>
-				<string>settingData.plist</string>
+				<string></string>
+				<key>ZTargetVc</key>
+				<string>ZYNProductController</string>
 			</dict>
 			<dict>
 				<key>ZIcon</key>

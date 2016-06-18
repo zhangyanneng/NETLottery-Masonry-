@@ -7,6 +7,8 @@
 //
 
 #import "ZYNSettingController.h"
+#import "ZYNSettingHomeCell.h"
+#import "ZYNQuestionTipsController.h"
 
 @interface ZYNSettingController ()
 
@@ -17,8 +19,7 @@
 
 @implementation ZYNSettingController
 
-- (instancetype)init
-{
+- (instancetype)init{
     self = [super initWithStyle:UITableViewStyleGrouped];
     if (self) {
         
@@ -29,6 +30,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
 }
 
 #pragma mark - Table view data source
@@ -39,37 +41,19 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.setData[section][@"ZItems"] count];
+    
+    return [self.setData[section][ZItems] count];
 }
 
+
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *ID = @"cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:ID];
-    }
-    
-    NSDictionary *item = self.setData[indexPath.section][@"ZItems"][indexPath.row];
-    cell.textLabel.text = item[@"ZTitle"];
-    
-    if (item[@"ZIcon"]) {
-        cell.imageView.image = [UIImage imageNamed:item[@"ZIcon"]];
-    }
-    //添加辅助视图
-    Class className = NSClassFromString(item[@"ZAccessoryType"]);
-    //初始化转换的类
-    id obj = [[className alloc] init];
-    //判断类的类型
-    if ([obj isKindOfClass:[UIImageView class]]) {
-        //如果是图片
-        UIImageView *imageView = (UIImageView *)obj;
-        imageView.image = [UIImage imageNamed:item[@"ZAccessoryName"]];
-        [imageView sizeToFit];//设置大小
-        cell.accessoryView = imageView;
-        
-    } else if ([obj isKindOfClass:[UISwitch class]]) {
-        cell.accessoryView = (UISwitch *) obj;
-    }
+    //获取数据
+    NSDictionary *item = self.setData[indexPath.section][ZItems][indexPath.row];
+    //创建cell
+    ZYNSettingHomeCell *cell = [ZYNSettingHomeCell settingHomeCell:tableView withItem:item];
+    //赋值
+    cell.cellItem = item;
     
     return cell;
 }
@@ -79,18 +63,18 @@
     // 去除选择灰色效果
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-     NSDictionary *item = self.setData[indexPath.section][@"ZItems"][indexPath.row];
-    if ([item[@"ZTargetVc"] length] <= 0) {
+     NSDictionary *item = self.setData[indexPath.section][ZItems][indexPath.row];
+    if ([item[ZTargetVc] length] <= 0) {
         return;
     }
     
-    Class class = NSClassFromString(item[@"ZTargetVc"]);
+    Class class = NSClassFromString(item[ZTargetVc]);
     
     UIViewController *targetVc= [[class alloc] init];
-    targetVc.title = item[@"ZTitle"];
+    targetVc.title = item[ZTitle];
     if ([targetVc isKindOfClass:[ZYNSettingController class]]) {
         ZYNSettingController *settingVc = (ZYNSettingController *)targetVc;
-        settingVc.plistName = item[@"ZPlistName"];
+        settingVc.plistName = item[ZPlistName];
         [self.navigationController pushViewController:settingVc animated:YES];
 
     } else {
@@ -101,12 +85,12 @@
 #pragma mark - 头部视图设置
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     
-    return self.setData[section][@"ZHeader"];
+    return self.setData[section][ZHeader];
 }
 
 #pragma mark - 底部视图设置
 - (NSString *)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
-    return self.setData[section][@"ZFooter"];
+    return self.setData[section][ZFooter];
 }
 
 
