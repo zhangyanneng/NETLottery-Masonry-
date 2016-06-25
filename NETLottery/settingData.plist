@@ -141,7 +141,9 @@
 				<key>ZAccessoryName</key>
 				<string>arrow_right</string>
 				<key>ZPlistName</key>
-				<string>settingData.plist</string>
+				<string>settingAbout.plist</string>
+				<key>ZTargetVc</key>
+				<string>ZYNAboutViewController</string>
 			</dict>
 		</array>
 	</dict>

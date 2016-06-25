@@ -7,92 +7,130 @@
 //
 
 #import "ZYNGuideViewController.h"
+#import "ZYNGuideCell.h"
 
 @interface ZYNGuideViewController ()
 
 @end
 
 @implementation ZYNGuideViewController
+{
+    UIImageView *_ballView;
+    UIImageView *_largeView;
+    UIImageView *_smallView;
+    NSInteger _oldIdx;
+}
+
+- (instancetype)init
+{
+    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc] init];
+    flowLayout.itemSize = [UIScreen mainScreen].bounds.size;
+    flowLayout.minimumLineSpacing = 0;
+    flowLayout.minimumInteritemSpacing = 0;
+    flowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    
+    return [super initWithCollectionViewLayout:flowLayout];
+}
+
 
 static NSString * const reuseIdentifier = @"Cell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.collectionView.pagingEnabled = YES;
+    self.collectionView.bounces = NO;
+    self.collectionView.showsVerticalScrollIndicator = NO;
+    self.collectionView.showsHorizontalScrollIndicator = NO;
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideLine"]];
+    imageView.x = -200;
+    [self.collectionView addSubview:imageView];
     
-    // Do any additional setup after loading the view.
+    UIImageView *ballView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guide1"]];
+    [self.collectionView addSubview:ballView];
+    _ballView = ballView;
+    
+    UIImageView *largeView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideLargeText1"]];
+    largeView.y = self.collectionView.height * 0.7;
+    [self.collectionView addSubview:largeView];
+    _largeView = largeView;
+    
+    UIImageView *smallView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"guideSmallText1"]];
+    smallView.y = self.collectionView.height * 0.8;
+    [self.collectionView addSubview:smallView];
+    _smallView = smallView;
+    
+    
+    [self.collectionView registerClass:[ZYNGuideCell class] forCellWithReuseIdentifier:reuseIdentifier];
+}
+#pragma mark - ScorllView
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    //获取到偏移量
+    CGFloat offSetX = scrollView.contentOffset.x;
+    //
+    NSInteger idx = offSetX / self.view.width;
+    
+    CGFloat changeOffSetX = offSetX;
+    
+    //当前的idx大于_oldIdx则是向左滑动，小于则是向右滑动
+    if (idx > _oldIdx) {
+        changeOffSetX += self.view.width;
+    } else if(idx < _oldIdx){
+        changeOffSetX -= self.view.width;
+    } else {
+        return;
+    }
+    //赋值
+    _oldIdx = idx;
+    
+    //设置图片信息
+    _ballView.image = [UIImage imageNamed:[NSString stringWithFormat:@"guide%zd",idx + 1]];
+    _largeView.image = [UIImage imageNamed:[NSString stringWithFormat:@"guideLargeText%zd",idx + 1]];
+    _smallView.image = [UIImage imageNamed:[NSString stringWithFormat:@"guideSmallText%zd",idx + 1]];
+
+    //先移动到下一个视图中
+    _ballView.x = changeOffSetX;
+    _largeView.x = changeOffSetX;
+    _smallView.x = changeOffSetX;
+    
+    //动画回到当前位置
+    [UIView animateWithDuration:0.25 animations:^{
+        _ballView.x = offSetX;
+        _largeView.x = offSetX;
+        _smallView.x = offSetX;
+    }];
+    
+    
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+    return 4;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    ZYNGuideCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    // Configure the cell
+    cell.contentView.layer.contents = (__bridge id)[UIImage imageNamed:[NSString stringWithFormat:@"guide%zdBackground",indexPath.row + 1]].CGImage;
+    
+    if (indexPath.row == 3) {
+        cell.isHiden = NO;
+    } else {
+        cell.isHiden = YES;
+    }
     
     return cell;
 }
 
-#pragma mark <UICollectionViewDelegate>
-
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end

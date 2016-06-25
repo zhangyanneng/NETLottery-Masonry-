@@ -69,6 +69,9 @@
 		2E4FD8BF1D13DB0800E7CF14 /* ZYNQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FD8BE1D13DB0800E7CF14 /* ZYNQuestion.m */; };
 		2E4FD8C21D13E22C00E7CF14 /* ZYNTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E4FD8C11D13E22C00E7CF14 /* ZYNTipsViewController.m */; };
 		2E6600AF1D155BD100746FC3 /* ZYNGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6600AE1D155BD100746FC3 /* ZYNGuideViewController.m */; };
+		2E6600B21D15631A00746FC3 /* ZYNAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E6600B11D15631A00746FC3 /* ZYNAboutViewController.m */; };
+		2E6600B61D1564D800746FC3 /* settingAbout.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E6600B51D1564D800746FC3 /* settingAbout.plist */; };
+		2E7243841D166D59001B2A2E /* ZYNGuideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7243831D166D59001B2A2E /* ZYNGuideCell.m */; };
 		2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */; };
 		2EB1C6E91D0EC930006A44C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EB1C6E81D0EC930006A44C2 /* main.m */; };
 		2EB1C6F41D0EC930006A44C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EB1C6F31D0EC930006A44C2 /* Assets.xcassets */; };
@@ -179,6 +182,11 @@
 		2E4FD8C11D13E22C00E7CF14 /* ZYNTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNTipsViewController.m; sourceTree = "<group>"; };
 		2E6600AD1D155BD100746FC3 /* ZYNGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNGuideViewController.h; sourceTree = "<group>"; };
 		2E6600AE1D155BD100746FC3 /* ZYNGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNGuideViewController.m; sourceTree = "<group>"; };
+		2E6600B01D15631A00746FC3 /* ZYNAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNAboutViewController.h; sourceTree = "<group>"; };
+		2E6600B11D15631A00746FC3 /* ZYNAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNAboutViewController.m; sourceTree = "<group>"; };
+		2E6600B51D1564D800746FC3 /* settingAbout.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settingAbout.plist; sourceTree = "<group>"; };
+		2E7243821D166D59001B2A2E /* ZYNGuideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYNGuideCell.h; sourceTree = "<group>"; };
+		2E7243831D166D59001B2A2E /* ZYNGuideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYNGuideCell.m; sourceTree = "<group>"; };
 		2E7AEF821D0FAA0E000AB04C /* UIView+ZYN_Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ZYN_Extension.h"; sourceTree = "<group>"; };
 		2E7AEF831D0FAA0E000AB04C /* UIView+ZYN_Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZYN_Extension.m"; sourceTree = "<group>"; };
 		2EB1C6E41D0EC930006A44C2 /* NETLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NETLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -327,6 +335,8 @@
 				2E4FD8BB1D13DA5100E7CF14 /* ZYNQuestionTipsController.m */,
 				2E4FD8C01D13E22C00E7CF14 /* ZYNTipsViewController.h */,
 				2E4FD8C11D13E22C00E7CF14 /* ZYNTipsViewController.m */,
+				2E6600B01D15631A00746FC3 /* ZYNAboutViewController.h */,
+				2E6600B11D15631A00746FC3 /* ZYNAboutViewController.m */,
 			);
 			name = Setting;
 			sourceTree = "<group>";
@@ -341,6 +351,7 @@
 				2EF0BD1C1D114711000D0E67 /* settingData.plist */,
 				2E05207A1D13985800FDD361 /* settingShare.plist */,
 				2E2B0AD01D12F520004C78F7 /* settingOpenPush.plist */,
+				2E6600B51D1564D800746FC3 /* settingAbout.plist */,
 			);
 			name = setting;
 			sourceTree = "<group>";
@@ -382,6 +393,8 @@
 		2E6600AC1D155B8500746FC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2E7243821D166D59001B2A2E /* ZYNGuideCell.h */,
+				2E7243831D166D59001B2A2E /* ZYNGuideCell.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -787,6 +800,7 @@
 				2E0520B51D139C7600FDD361 /* lk11_howto.html in Resources */,
 				2E0520BF1D139C7600FDD361 /* x3d_howto.html in Resources */,
 				2E0520AD1D139C7600FDD361 /* helpGroupBuy.html in Resources */,
+				2E6600B61D1564D800746FC3 /* settingAbout.plist in Resources */,
 				2E0520B91D139C7600FDD361 /* qlc_howto.html in Resources */,
 				2E0520A51D139C7600FDD361 /* bjdc_howto.html in Resources */,
 				2E0520BE1D139C7600FDD361 /* ssq_howto.html in Resources */,
@@ -835,6 +849,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7243841D166D59001B2A2E /* ZYNGuideCell.m in Sources */,
 				2E0AFBB41D10234500375E3B /* MASConstraint.m in Sources */,
 				2E0AFB971D10215500375E3B /* ZYNDiscoverCell.m in Sources */,
 				2E0AFBBC1D10234500375E3B /* ViewController+MASAdditions.m in Sources */,
@@ -843,6 +858,7 @@
 				2EF0BD0F1D1128BE000D0E67 /* ZYNSettingController.m in Sources */,
 				2E2B0ACF1D12F2E5004C78F7 /* ZYNSettingHomeCell.m in Sources */,
 				2EB1C6E91D0EC930006A44C2 /* main.m in Sources */,
+				2E6600B21D15631A00746FC3 /* ZYNAboutViewController.m in Sources */,
 				2EB1C75B1D0ED166006A44C2 /* ZYNNavigationController.m in Sources */,
 				2E7AEF841D0FAA0E000AB04C /* UIView+ZYN_Extension.m in Sources */,
 				2E0AFBB31D10234500375E3B /* MASCompositeConstraint.m in Sources */,

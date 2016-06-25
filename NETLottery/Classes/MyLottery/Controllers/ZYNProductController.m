@@ -13,7 +13,7 @@
 
 @interface ZYNProductController ()
 
-@property (nonatomic,strong) UICollectionViewFlowLayout *flowLayout;
+@property (nonatomic,weak) UICollectionViewFlowLayout *flowLayout;
 
 @property (nonatomic,strong) NSArray *products;
 
@@ -24,12 +24,14 @@
 #pragma mark - 重写init方法
 - (instancetype)init
 {
-    _flowLayout = [[UICollectionViewFlowLayout alloc] init];
-    self = [super initWithCollectionViewLayout:_flowLayout];
-    if (self) {
-        
-    }
-    return self;
+    UICollectionViewFlowLayout *flowLayout =[[UICollectionViewFlowLayout alloc] init];
+    
+    flowLayout.itemSize = CGSizeMake(76, 91);
+    flowLayout.minimumLineSpacing = 5;
+    flowLayout.minimumInteritemSpacing = 5;
+    flowLayout.sectionInset = UIEdgeInsetsMake(20, 0, 0, 0);
+    
+    return [super initWithCollectionViewLayout:flowLayout];;
 }
 
 
@@ -41,12 +43,6 @@ static NSString * const reuseIdentifier = @"Cell";
     
     UINib *cellNib = [UINib nibWithNibName:@"ZYNProductCell" bundle:nil];
     //初始化
-    ZYNProductCell *cell = [[cellNib instantiateWithOwner:nil options:nil] lastObject];
-    
-    self.flowLayout.itemSize = cell.bounds.size;
-    self.flowLayout.minimumLineSpacing = 5;
-    self.flowLayout.minimumInteritemSpacing = 5;
-    self.flowLayout.sectionInset = UIEdgeInsetsMake(20, 0, 0, 0);
     
     [self.collectionView registerNib: cellNib forCellWithReuseIdentifier:reuseIdentifier];
    
@@ -65,6 +61,27 @@ static NSString * const reuseIdentifier = @"Cell";
     cell.product = self.products[indexPath.row];
     
     return cell;
+}
+
+#pragma mark - UICollectionViewDelegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ZYNProductCell *cell = (ZYNProductCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    
+    ZYNProduct *pruduct =  cell.product;
+    
+    //拼接url
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@://%@",pruduct.customUrl,pruduct.ID]];
+    //通过Application去打开应用
+    UIApplication *application = [UIApplication sharedApplication];
+    if ([application canOpenURL:url]) {
+        //直接打开应用
+        [application openURL:url];
+    } else {
+        //打开苹果应用上的地址
+        [application openURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@",pruduct.url]]];
+    }
 }
 
 #pragma mark - 懒加载数据模型

@@ -22,7 +22,7 @@
 #define ZCellStyle              @"ZCellStyle"
 #define ZTargetVc               @"ZTargetVc"
 #define ZKeyName                @"ZKeyName"
-//#define ZKeyName
+#define ZCallFunc               @"ZCallFunc"
 
 
 @interface ZYNSettingHomeCell : UITableViewCell

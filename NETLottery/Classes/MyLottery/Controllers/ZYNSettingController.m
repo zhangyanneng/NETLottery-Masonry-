@@ -64,11 +64,24 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
      NSDictionary *item = self.setData[indexPath.section][ZItems][indexPath.row];
+    //获取控制器
+    Class class = NSClassFromString(item[ZTargetVc]);
+    //获取方法
+    
+    if (item[ZCallFunc] && [item[ZCallFunc] length] > 0) {
+        NSString *funcStr = item[ZCallFunc];
+        SEL selector = NSSelectorFromString(funcStr);
+        if ([self respondsToSelector:selector]) {
+            //执行方法
+            [self performSelector:selector];
+        } else {
+            ZYNLog(@"没有响应");
+        }
+    }
+    //没有控制器，则不继续往下执行
     if ([item[ZTargetVc] length] <= 0) {
         return;
     }
-    
-    Class class = NSClassFromString(item[ZTargetVc]);
     
     UIViewController *targetVc= [[class alloc] init];
     targetVc.title = item[ZTitle];

@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ZYNTabBarController.h"
+#import "ZYNGuideViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,13 +16,41 @@
 
 @implementation AppDelegate
 
+#pragma mark - 判断版本信息
+
+- (BOOL)isNewVersion {
+    //根据版本信息确定是否需要显示新特性
+    NSDictionary *infoDict = [NSBundle mainBundle].infoDictionary;
+    NSString *currentVersion = infoDict[@"CFBundleShortVersionString"];
+    //获取保存的版本号
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    NSString *oldVersion = [userDefaults objectForKey:@"app_version"];
+    
+    if ([currentVersion isEqualToString:oldVersion]) {
+        return NO;
+    } else {
+        //保存当前版本信息
+        NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+        [userDefaults setObject:currentVersion forKey:@"app_version"];
+        //显示新特性
+        return YES;
+    }
+
+}
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    ZYNTabBarController *tab = [[ZYNTabBarController alloc] init];
-
-    self.window.rootViewController = tab;
+    //进行判断
+    if ([self isNewVersion]) {
+        //显示新特性
+        ZYNGuideViewController *guideVc = [[ZYNGuideViewController alloc] init];
+        self.window.rootViewController = guideVc;
+    } else {
+        //直接进入主界面
+        ZYNTabBarController *tab = [[ZYNTabBarController alloc] init];
+        self.window.rootViewController = tab;
+    }
     
     [self.window makeKeyAndVisible];
     
